@@ -1,7 +1,9 @@
-import {NgModule} from "@angular/core";
-import {Repository} from "./repository";
+import { NgModule } from "@angular/core";
+import { Repository } from "./repository";
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
-    providers:[Repository]
+    imports: [HttpClientModule],
+    providers: [Repository]
 })
-export class ModelModule{}
+export class ModelModule { }
